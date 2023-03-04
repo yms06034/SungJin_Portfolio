@@ -1,0 +1,1 @@
+history.scrollRestoration = "auto";

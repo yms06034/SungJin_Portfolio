@@ -1,3 +1,6 @@
+$primary: #6E07F3;
+$img_color: #5BE9B9;
+
 body {
   font-family: 'Roboto', sans-serif !important;
   color: #222;
@@ -28,12 +31,13 @@ a {
   .h_content {
     display: flex;
     .bbtn {
-      border: 2px solid #0575e6;
+      border: 2px solid $primary;
       border-radius: 9999px;
       padding: 8px 10px;
       transition: all .2s;
+      color: $primary;
       &:hover {
-        background-color: #0575e6;
+        background-color: $primary;
         color: #fff;
         transition: all .2s;
       }
@@ -80,4 +84,100 @@ a {
 
     }
   }
+}
+
+.snd_sec {
+  background-color: $primary;
+  .snd_content {
+    width: 1260px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    .snd_text {
+      width: 61%;
+      padding: 9rem 0;
+      color: #fff;
+      .snd_title {
+        font-size: 32px;
+        font-weight: 700;
+      }
+      .snd_subtext {
+        font-size: 20px;
+        padding-top: 10px;
+      }
+    }
+  }
+}
+
+.trd_sec {
+  margin-top: -10rem;
+  padding: 5rem 1.5rem;
+  .trd_container {
+    max-width: 950px;
+    margin: 0 auto;
+    position: relative;
+    .trd_content {
+      border-radius: 12px;
+      box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+      color: #141c3a;
+      display: block;
+      background-color: #fff;
+      .trd_boxarea {
+        margin-top: -0.75rem;
+        margin-bottom: -0.75rem;
+        display: flex;
+        .content_box {
+          border-bottom: 0px solid #E6ECF8;
+          border-right: 1px solid #E6ECF8;
+          display: flex;
+          // justify-content: center;
+          flex-basis: 0;
+          flex-grow: 1;
+          flex-shrink: 1;
+          padding: 70px 45px;
+          flex-direction: column;
+          align-items: center;
+          font-size: 18px;
+          &:last-child{
+            border-right: 0px solid #E6ECF8;
+          }
+          .img_bg {
+            width: 80px;
+            height: 80px;
+            background-color: $img_color;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .data_img {
+              width: 52px;
+              height: auto;
+            }
+          }
+          .job_title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 1.5rem 0;
+          }
+          .job_subtext {
+            font-weight: 400;
+          }
+          .list-title {
+            color: $primary;
+            margin-top: 35px;
+            margin-bottom: 10px;
+          }
+          .language_list {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+.fth_sec {
+  padding: 5rem 4.5rem;
 }
