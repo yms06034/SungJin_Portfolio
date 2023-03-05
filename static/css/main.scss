@@ -399,11 +399,17 @@ a {
           color: #ffffff;
           border-radius: 100%;
           margin: 0 15px;
+          @media screen and (max-width:450px) {
+            margin: 0 5px;
+          }
           .social_img {
             width: 60px;
             height: auto;
             opacity: .7;
             transition: all .2s;
+            @media screen and (max-width:450px) {
+              width: 45px;
+            }
             &:hover {
               opacity: 1;
               transition: all .2s;
