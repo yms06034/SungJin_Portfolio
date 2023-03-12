@@ -22,7 +22,7 @@
   <link rel="stylesheet" href="../static/css/main.scss" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" />
 
-  <script src="../static/js/main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
   <!-- FAVICON -->
   <link rel="icon" href="../images/Avatar-Maker.png" />
@@ -51,11 +51,19 @@
           </a>
         </div>
         <div class="h_content">
-          <a class="bbtn" href="Resume.html">Say Hello</a>
+          <button class="bbtn" id="openBtn">안녕하세요</button>
         </div>
       </div>
     </header>
-    
+
+    <!-- popup -->
+    <div id="popup" class="popup">
+      <div class="popup-container">
+          <span id="closeBtn" class="close-button">×</span>
+          <div class="popup_content">WelCome! My Resume</div>
+      </div>
+    </div>
+
     <section>
       <div class="first_sec">
         <div class="f_title">
@@ -66,7 +74,7 @@
           <img class="mypro_img" src="../images/Avatar-Maker.png" alt="MYPHOTO">
         </div>
         <div class="bottom_area">
-          <img class="devices_img" src="https://mattfarley.ca/img/hero-devices.svg" alt="devices">
+          <img class="devices_img" src="https://mattfarley.ca/img/hero-devices.svg" alt="devices">`
         </div>
       </div>
     </section>
@@ -177,7 +185,8 @@
                 <img class="img_con" src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="test">
                 <div class="text_box">
                   <h1 class="sub_text">프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.</h1>
-                  <a class="a_bbtn" href="javascripts:void(0)">바로가기</a>
+                  <!-- <button class="a_bbtn" id="porOpenBtn">바로가기</button> -->
+                  <button class="a_bbtn">바로가기</button>
                 </div>
               </figure>
             </div>
@@ -187,7 +196,7 @@
                 <img class="img_con" src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="test">
                 <div class="text_box">
                   <h1 class="sub_text">프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.</h1>
-                  <a class="a_bbtn" href="javascripts:void(0)">바로가기</a>
+                  <button class="a_bbtn">바로가기</button>
                 </div>
               </figure>
             </div>
@@ -197,7 +206,7 @@
                 <img class="img_con" src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="test">
                 <div class="text_box">
                   <h1 class="sub_text">프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.</h1>
-                  <a class="a_bbtn" href="javascripts:void(0)">바로가기</a>
+                  <button class="a_bbtn">바로가기</button>
                 </div>
               </figure>
             </div>
@@ -207,7 +216,7 @@
                 <img class="img_con" src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="test">
                 <div class="text_box">
                   <h1 class="sub_text">프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.</h1>
-                  <a class="a_bbtn" href="javascripts:void(0)">바로가기</a>
+                  <button class="a_bbtn">바로가기</button>
                 </div>
               </figure>
             </div>
@@ -217,7 +226,7 @@
                 <img class="img_con" src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="test">
                 <div class="text_box">
                   <h1 class="sub_text">프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.</h1>
-                  <a class="a_bbtn" href="javascripts:void(0)">바로가기</a>
+                  <button class="a_bbtn">바로가기</button>
                 </div>
               </figure>
             </div>
@@ -227,7 +236,7 @@
                 <img class="img_con" src="https://mattfarley.ca/img/projects/wfdesignbuild.png" alt="test">
                 <div class="text_box">
                   <h1 class="sub_text">프레이저 밸리(Fraser Valley) 주택 소유자에게 서비스를 제공하는 고급 맞춤형 주거용 리노베이터입니다.</h1>
-                  <a class="a_bbtn" href="javascripts:void(0)">바로가기</a>
+                  <button class="a_bbtn">바로가기</button>
                 </div>
               </figure>
             </div>
@@ -236,6 +245,48 @@
         </div>
       </div>
     </section>
+
+    <div class="por_modal">
+      <div class="por_modal-content">
+        <span class="close">&times;</span>
+        <div class="por_content">첫 번째 Modal</div>
+      </div>
+    </div>
+
+    <div class="por_modal">
+      <div class="por_modal-content">
+        <span class="close">&times;</span>
+        <div class="por_content">두 번째 Modal</div>
+      </div>
+    </div>
+
+    <div class="por_modal">
+      <div class="por_modal-content">
+        <span class="close">&times;</span>
+        <div class="por_content">세 번째 Modal</div>
+      </div>
+    </div>
+
+    <div class="por_modal">
+      <div class="por_modal-content">
+        <span class="close">&times;</span>
+        <div class="por_content">네 번째 Modal</div>
+      </div>
+    </div>
+
+    <div class="por_modal">
+      <div class="por_modal-content">
+        <span class="close">&times;</span>
+        <div class="por_content">다섯 번째 Modal</div>
+      </div>
+    </div>
+
+    <div class="por_modal">
+      <div class="por_modal-content">
+        <span class="close">&times;</span>
+        <div class="por_content">여섯 번째 Modal</div>
+      </div>
+    </div>
 
     <footer class="ffth_container">
       <div class="footer_content">
@@ -260,7 +311,7 @@
               <img class="social_img" src="../images/linkedin.png" alt="linkedin">
             </a>
 
-            <a class="social_btn" href="javascripts:void(0)">
+            <a class="social_btn" href="javascript:void(0)">
               <img class="social_img" src="../images/notion.png" alt="notion">
             </a>
 
@@ -274,6 +325,6 @@
     </footer>
   
   <div>
-
+  <script src="../static/js/main.js"></script>
 </body>
 </html>
