@@ -1,4 +1,4 @@
 # SungJin_Portfolio
-Webpack
+Webpack \
 npm i -D parcel-bundler \
 npm run dev
